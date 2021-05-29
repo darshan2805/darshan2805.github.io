@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Sonic Internet Provider</title>
+  </head>
+
+  <body>
+    <nav class="navbar background h-nav-resp">
+      <ul class="nav-list v-class-resp">
+        <div class="logo"><img src="img/img.jpg" alt="logo" /></div>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About Us</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="" >Internet Plans</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
+      </ul>
+      <div class="rightNav v-class-resp">
+        <input type="text" name="search" id="search" />
+        <button class="btn btn-sm">Search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <section class="background firstSection" id="Home">
+      <div class="box-main">
+        <div class="firstHalf">
+          <p class="text-big">Free 30-Day Trail</p><br>
+          <p class="text-small">
+            If You Dont Like It,We Take It Back
+          </p><br>
+          <div class="button">
+            <button class="btn">Book Now</button>
+            <button class="btn">Plans</button>
+          </div>
+        </div>
+        <div class="secoundHalf"><img src="img/img2.jpg" alt="lap" /></div>
+      </div>
+    </section>
+    <section class="section" id="Services">
+        <div class="paras">
+        <p class="sectionTag text-big">High Speed Internet</p>
+        <p class="sectionSubTag text-small">For the first time, get up to 1 Gbps internet across every corner of your home.
+          Reliable and fast internet that matches with your speed.
+            </p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?internet,computer" alt="laptop" class="imgfluid">
+            </div>
+    </section>
+    <section class="section section-left">
+        <div class="paras">
+        <p class="sectionTag text-big">Free HD Voice</p>
+        <p class="sectionSubTag text-small">Make FREE crystal-clear high definition voice calls to anyone, anywhere in Nation.
+            </p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?phone,wifi" alt="laptop" class="imgfluid">
+            </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+        <p class="sectionTag text-big">Gaming </p>
+        <p class="sectionSubTag text-small">Nations’s own multi-player online gaming platform, at par with the global gaming leaders.
+            </p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/900x900/?ps4,videogame" alt="laptop" class="imgfluid">
+            </div>
+    </section>
+    <section class="section section-left">
+      <div class="paras">
+      <p class="sectionTag text-big">Security & Surveillance</p>
+      <p class="sectionSubTag text-small">We know how much you care about your family. With Sonic’s safety & surveillance solution, ALWAYS keep your home safe.
+          </p>
+      </div>
+          <div class="thumbnail">
+              <img src="https://source.unsplash.com/900x900/?home,Security" alt="laptop" class="imgfluid">
+          </div>
+  </section>
+  <section class="section">
+    <div class="paras">
+    <p class="sectionTag text-big">Home Networking </p>
+    <p class="sectionSubTag text-small">Home Networking is a FREE and easy way to access or share all your content (photos, music, videos & documents) across devices, anytime & anywhere in the world!
+        </p>
+    </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?networking,house" alt="laptop" class="imgfluid">
+        </div>
+</section>
+    <hr>
+    <script>
+    function validateForm() {
+      x = document.contact.name.value;
+      y= document.contact.ph_no.value;
+      z= document.contact.email.value;
+      a= document.contact.concern.value;
+          if (test(x))
+      {
+         if (test1(y))
+       {
+         if (test2(z))
+         {
+          if (test3(a))
+         {
+          return true;
+      }}}}
+      return false;
+  }
+  function test(x)
+  {
+        if (x.length==0) {
+               alert("Name must be filled out");
+          return false;
+      }
+       return true;
+      }
+  function test1(y)
+  {
+        if (y.length==0) {
+               alert("Phone number must be filled out");
+          return false;
+      }
+       return true;
+       }
+       function test2(z)
+  {
+        if (z.length==0) {
+               alert("email must be filled out");
+          return false;
+      }
+       return true;
+      }
+      function test3(a)
+  {
+        if (a.length==0) {
+               alert("concern must be filled out");
+          return false;
+      }
+       return true;
+      }
+    </script>
+    <section class="contact" id="Contact">
+      <h2 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 200%;">Contact Us</h2>
+      <div class="form">
+        <form name="contact" onsubmit="return validateForm()" action="sonicdbcon.php" method="post" >
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter you Name">
+        <input class="form-input" type="text" name="ph_no" id="ph_no" placeholder="Enter you Phone Number">
+        <input class="form-input" type="email" name="email" id="email" placeholder="Enter you Email">
+        <textarea class="form-input" name="concern" id="concern" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
+        <input type="submit" name="Submit" value="Submit" class="btn btn-dark" style="font-size: 15px;">
+      </form>
+      </div>
+    </section>
+    <footer style="text-align: center;padding: 4px 4px;background-color: black;color: white;">
+      Copyright &copy; 2027 www.Sonicinternet.com - All rights reserved
+    </footer>
+    <script src="js/resp.js"></script>
+  </body>
+</html>
